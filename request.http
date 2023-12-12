@@ -1,0 +1,206 @@
+### INGRESAR EMPRESA (HAZLO POR POSTMAN PARA LA CARGA DE IMAGENES)
+POST http://localhost:9000/api/empresa HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": " unsa",
+    "email": "unsa@example.com",
+    "telefono": 444555
+    ///PREFERIBLE HACERLO EN POSTMAN
+}
+
+### OBTENER TODAS EMPRESAS
+GET http://localhost:9000/api/empresa HTTP/1.1
+
+### OBTENER 1 EMPRESA (CAMBIA ID)
+GET http://localhost:9000/api/empresa/65497f873f8790c59137811d HTTP/1.1
+
+### ACTUALIZAR 1 EMPRESA(ID)
+PUT http://localhost:9000/api/empresa/65497f873f8790c59137811d HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "UNSAC",
+    "email": "mallaqp@example.com",
+    "telefono": 444555
+}
+### BORRAR EMRPESA(ID)
+DELETE http://localhost:9000/api/empresa/65498052f24512087c6228c1 HTTP/1.1
+
+
+###
+POST http://localhost:9000/api/nivel HTTP/1.1
+Content-Type: application/json
+
+{
+    "nivel": "Sector B",
+    "empresa": "Tecsup1",
+    "imagen":"https://img.freepik.com/foto-gratis/estacionamiento-vacio-estacionamiento-al-aire-libre-parque-publico_1127-3374.jpg"
+    
+}
+
+###
+GET http://localhost:9000/api/nivel HTTP/1.1
+
+
+
+
+###
+GET http://localhost:9000/api/nivel/65728aad8251c8854ba8c692 HTTP/1.1
+###
+
+PUT http://localhost:9000/api/nivel/65727a07e3a392e61dbef81a HTTP/1.1
+Content-Type: application/json
+
+{
+    "nivel": "Sector B",
+    "empresaNombre": "Tecsup1",
+    "imagen":"https://img.freepik.com/foto-gratis/estacionamiento-vacio-estacionamiento-al-aire-libre-parque-publico_1127-3374.jpg"
+    
+}
+###
+DELETE http://localhost:9000/api/nivel/654c2a581e5a7f6a278d117c HTTP/1.1
+
+
+
+
+
+
+###
+POST http://localhost:9000/api/parking HTTP/1.1
+Content-Type: application/json
+
+{
+    "lugar": "n1",
+    "nivel": "Sector A2",
+    "estado": false
+}
+
+###
+GET http://localhost:9000/api/parking HTTP/1.1
+
+###
+GET http://localhost:9000/api/parking/655e5f4a274a71c0ef44c282 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/parking/65740cb55f7b2195d36938f8 HTTP/1.1
+Content-Type: application/json
+
+{
+    "lugar": "a34",
+    "nivel": "Sector A2",
+    "estado": true
+}
+
+###
+
+DELETE http://localhost:9000/api/parking/655e5f4a274a71c0ef44c282 HTTP/1.1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+POST http://localhost:9000/api/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "usuario": "luis",
+    "password": "12345",
+    "empresa": "UNSA"
+}
+
+###
+POST http://localhost:9000/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "usuario": "luis",
+    "password": "12345"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+###
+GET http://localhost:9000/api/users/655e6263b7f83260131b3854 HTTP/1.1
+###
+PUT http://localhost:9000/api/users/655e6263b7f83260131b3854 HTTP/1.1
+Content-Type: application/json
+
+{
+    "usuario": "admin1",
+    "password": "12345",
+    "empresa ": "65594c9976bb39b7d77c4239"
+}
+
+###
+DELETE  http://localhost:9000/api/users/655e6263b7f83260131b3854 HTTP/1.1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+POST http://localhost:9000/api/registerAdmin HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "jesus811",
+    "password": "admin1234"
+
+}
+
+###
+POST http://localhost:9000/api/loginAdmin HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "jesus811",
+    "password": "admin1234"
+
+}
+
+
+###
+POST http://54.196.243.240:9000/api/registerAdmin HTTP/1.1
+
+Content-Type: application/json
+
+{
+    "username": "jesus811",
+    "password": "admin1234"
+
+}
+
+###
+POST http://54.196.243.240:9000/api/registerAdmin HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "jesus811",
+    "password": "admin1234"
+
+}
